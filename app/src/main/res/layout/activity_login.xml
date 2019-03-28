@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="helpme.helpmetest.LoginActivity"
+    android:background="@drawable/gradient">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:contentDescription="@string/desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="59dp"
+            android:src="@drawable/profile_avatar"/>
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="138dp"
+            android:background="#11000000"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/ic_action_persn"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="#11000000"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/ic_action_pswrd" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttonlogin"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:text="@string/login"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/textViewRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Dont' have an account?\nRegister Here"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    </LinearLayout>
+ 
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

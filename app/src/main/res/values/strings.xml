@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HelpMeTest</string>
+    <string name="desc">Image</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="title_activity_welcome">Map</string>
+</resources>
